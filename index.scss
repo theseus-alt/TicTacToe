@@ -1,0 +1,44 @@
+.game {
+  margin: auto;
+  width: fit-content;
+  .box {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    margin: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    font-size: 50px;
+    text-align: center;
+  }
+}
+.headings {
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+}
+
+@mixin infostyle {
+  position: absolute;
+  width: fit-content;
+  margin: auto;
+  //text-align: center;
+}
+.info {
+  .p1 {
+    @include infostyle;
+    span {
+      color: red;
+    }
+  }
+  .p2 {
+    @include infostyle;
+    span {
+      color: blue;
+    }
+  }
+}
