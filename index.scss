@@ -11,6 +11,7 @@
     border-color: black;
     font-size: 50px;
     text-align: center;
+    cursor: pointer;
   }
 }
 .headings {
@@ -22,22 +23,35 @@
   }
 }
 
-@mixin infostyle {
-  position: absolute;
+@mixin cent {
   width: fit-content;
   margin: auto;
-  //text-align: center;
 }
 .info {
-  .p1 {
-    @include infostyle;
+  @include cent;
+  #p1 {
     span {
       color: red;
     }
     display: none;
   }
-  .p2 {
-    @include infostyle;
+  #p2 {
+    span {
+      color: blue;
+    }
+  }
+}
+#go {
+  @include cent;
+}
+.win {
+  @include cent;
+  #w1 {
+    span {
+      color: red;
+    }
+  }
+  #w2 {
     span {
       color: blue;
     }

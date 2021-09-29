@@ -15,6 +15,7 @@
   border-color: black;
   font-size: 50px;
   text-align: center;
+  cursor: pointer;
 }
 
 .headings h1 {
@@ -25,28 +26,44 @@
   text-align: center;
 }
 
-.info .p1 {
-  position: absolute;
+.info {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
+}
+
+.info #p1 {
   display: none;
 }
 
-.info .p1 span {
+.info #p1 span {
   color: red;
 }
 
-.info .p2 {
-  position: absolute;
+.info #p2 span {
+  color: blue;
+}
+
+#go {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
 }
 
-.info .p2 span {
+.win {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.win #w1 span {
+  color: red;
+}
+
+.win #w2 span {
   color: blue;
 }
 /*# sourceMappingURL=index.css.map */

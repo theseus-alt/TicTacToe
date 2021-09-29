@@ -27,12 +27,18 @@
       <h3 id="p1">Player <span>X</span>'s turn</h3>
       <h3 id="p2">Player <span>O</span>'s turn</h3>
     </div>
+    <div class="takeback">
+      <button id="tb" onclick="takeBack()">Take Back</button>
+    </div>
 
     <h3 style="display: none" id="go">Game Over!</h3>
     <div class="win">
-      <h3 id="w1">Player X won!</h3>
-      <h3 id="w2">Player O won!</h3>
-      <h3 id="w0">Draw</h3>
+      <h3 style="display: none" id="w1">Player <span>X</span> won!</h3>
+      <h3 style="display: none" id="w2">Player <span>O</span> won!</h3>
+      <h3 style="display: none" id="w0">Draw</h3>
+      <button style="display: none" id="again" onclick="playAgain()">
+        Play Again!
+      </button>
     </div>
   </body>
   <script src="index.js"></script>
