@@ -8,9 +8,12 @@ var ind = [
   [null, null, null],
 ];
 function rungame(id) {
+  document.getElementById("dis").style.display = "none";
+  document.getElementById("tb").style.display = "block";
   if (turn % 2 == 0) {
     document.getElementById(id).value = "X";
     document.getElementById(id).disabled = true;
+    document.getElementById(id).style.color = "#ff7779";
     document.getElementById(id).style.cursor = "not-allowed";
     document.getElementById("p2").style.display = "block";
     document.getElementById("p1").style.display = "none";
@@ -18,6 +21,7 @@ function rungame(id) {
   } else {
     document.getElementById(id).value = "O";
     document.getElementById(id).disabled = true;
+    document.getElementById(id).style.color = "#3cb7f0";
     document.getElementById(id).style.cursor = "not-allowed";
     document.getElementById("p1").style.display = "block";
     document.getElementById("p2").style.display = "none";
@@ -166,6 +170,7 @@ function gameover(turn, decisive) {
   }
   document.getElementById("tb").disabled = true;
   document.getElementById("tb").style.cursor = "not-allowed";
+  document.getElementById("tb").style.display = "none";
 }
 function playAgain() {
   location = location;
